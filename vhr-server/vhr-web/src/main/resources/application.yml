@@ -1,0 +1,21 @@
+server:
+  port: 9999
+logging:
+  level:
+    com.qingqiao.vhr.mapper : debug
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql:///vhr?serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 64801
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
